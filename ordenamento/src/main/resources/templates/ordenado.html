@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmls:th="http://thymeleaf.org"
+	xlms:layout="http://www.ultraq.net/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Ordenar Numeros</title>
+</head>
+<body>
+	<h1>Números em Ordem Crescente: </h1>
+	<br />
+	
+	<form method="post" action="ordenar">
+		Número 1: <input type = "number" name="v1"/>
+		Número 2: <input type = "number" name="v2"/>
+		<button type="submit">Ordenar</button>
+	</form>
+	<br />
+	<p class = "container">
+		O resultado do ordenamento é:<span th:text="${valor1}"></span>
+		<span th:text="${valor2}"></span>
+</body>
+</html>
